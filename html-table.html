@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css-table.css">
+  <title>Таблица</title>
+</head>
+<body onload="onload()">
+  <table class="table">
+    <thead>
+      <tr class="head row">
+        <th class="section head cell"></th>
+        <th class="col2 head cell">Характеристика</th>
+        <th class="col3 head cell">Значимость</th>
+        <th class="col4 head cell">Оценка</th>
+        <th class="col5 head cell">Степень воздействия</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="section row">
+        <td class="col1 head cell">Сильные стороны</td>
+        <td class="section cell" colspan="4"></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 item cell editable"><textarea class="input textarea" id="col11" rows="1"></textarea></td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col12" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col13" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col14" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col15" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 item cell editable"><textarea class="input textarea" id="col21" rows="1"></textarea></td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col22" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col23" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col24" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col25" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 item cell editable"><textarea class="input textarea" id="col31" rows="1"></textarea></td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col32" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col33" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col34" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col35" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 item cell editable"><textarea class="input textarea" id="col41" rows="1"></textarea></td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col42" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col43" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col44" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col45" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 head cell">Другие факторы</td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col52" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col53" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col54" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col55" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 head cell">Итог</td>
+        <td class="section cell"></td>
+        <td class="col3 item cell result"><input type="text" class="input result" id="col63" value="0" disabled /></td>
+        <td class="col4 item cell result"><input type="text" class="input result" id="col64" value="0" disabled /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col65" value="0" disabled /></td>
+      </tr>
+      <tr class="section row">
+        <td class="col1 head cell">Слабые стороны</td>
+        <td class="section cell" colspan="4"></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 item cell editable"><textarea class="input textarea" id="col71" rows="1"></textarea></td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col72" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col73" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col74" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col75" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 item cell editable"><textarea class="input textarea" id="col81" rows="1"></textarea></td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col82" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col83" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col84" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col85" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 item cell editable"><textarea class="input textarea" id="col91" rows="1"></textarea></td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col92" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col93" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col94" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col95" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 item cell editable"><textarea class="input textarea" id="col101" rows="1"></textarea></td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col102" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col103" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col104" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col105" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 head cell">Другие факторы</td>
+        <td class="col2 item cell editable"><textarea class="input textarea" id="col112" rows="1"></textarea></td>
+        <td class="col3 item cell editable"><input type="text" class="input" id="col113" value="0" /></td>
+        <td class="col4 item cell editable"><input type="text" class="input" id="col114" value="0" /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col115" value="0" disabled /></td>
+      </tr>
+      <tr class="item row">
+        <td class="col1 head cell">Итог</td>
+        <td class="section cell"></td>
+        <td class="col3 item cell result"><input type="text" class="input result" id="col123" value="0" disabled /></td>
+        <td class="col4 item cell result"><input type="text" class="input result" id="col124" value="0" disabled /></td>
+        <td class="col5 item cell result"><input type="text" class="input result" id="col125" value="0" disabled /></td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="print" class="printBlock">
+    Распечатать
+  </div>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+  <script src="js-table.js"></script>
+</body>
+</html>

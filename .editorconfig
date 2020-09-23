@@ -1,0 +1,12 @@
+root = true
+
+# Для всех файлов используем unix-совместимые переносы строк
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+
+# отступы в 4 пробела
+# [*.js,*.css,*.html]
+# indent_size = 2
